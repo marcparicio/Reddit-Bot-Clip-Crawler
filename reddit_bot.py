@@ -28,7 +28,7 @@ def process_submission(submission):
             submit_slug(slug)
 
 def submit_slug(slug):
-    url = "http://livestream-highlights.herokuapp.com/clips/" + slug
+    url = "http://livestream-highlights.herokuapp.com/clips?slug=" + slug
     requests.post(url)
     print ("Clip submitted successfully!")
 
